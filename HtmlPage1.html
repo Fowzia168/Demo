@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="css/bootstrap.min.css" />
+    <style>
+        input {
+            font-size: 16px;
+            font-weight: 200;
+            font-family: cursive;
+            background-color: aliceblue;
+            width: 437px;
+            height: 36px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+            input[type=submit]:hover {
+                background-color: beige;
+            }
+
+        .allDetails {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 200;
+            font-family: cursive
+        }
+
+            .allDetails th, .allDetails td {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            .allDetails th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: burlywood;
+                color: black;
+            }
+    </style>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $(".sub").click(function () {
+
+                alert("jdfjagf");
+            })
+        });
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="container" style="background: linear-gradient(to bottom left, #0099ff 0%, #66ff99 100%); ">
+
+        <div class="row" style="display: flex; padding: 10px 50px; ">
+            <div class="col-12 col-md-6" style="background-color: aqua; padding: 10px 80px 10px 80px; width: 100%; margin: 6px;">
+
+                <input id="title" name="title" type="text" placeholder="Title" />
+            </div>
+            <div class="col-12 col-md-6" style="background-color: aquamarine; padding: 10px 80px 10px 80px; width: 100%; margin: 6px; ">
+
+                <input id="description" name="description" placeholder="Description" type="text">
+            </div>
+        </div>
+
+        <div class="row" style="display: flex; padding: 10px 50px;">
+
+            <div class="col-12 col-md-6" style="background-color: aquamarine; padding: 10px 80px 10px 80px; width: 100%; margin: 6px; ">
+
+                <input id="details" name="details" type="text" placeholder="Details" />
+            </div>
+            <div class="col-12 col-md-6" style="background-color: aqua; padding: 10px 80px 10px 80px; width: 100%; margin: 6px; ">
+
+                <input id="partsNeed" name="partsNeed" type="text" placeholder="PartsNeed" />
+            </div>
+
+        </div>
+
+        <div class="row" style="display: flex; padding: 10px 50px; ">
+            <div class="col-12 col-md-6" style="background-color: aqua; padding: 10px 80px 10px 80px; width: 100%; margin: 6px;">
+
+                <input id="date" name="date" type="text" placeholder="Date" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" />
+            </div>
+            <div class="col-12 col-md-6" style="background-color: aquamarine; padding: 10px 80px 10px 80px; width: 100%; margin: 6px; ">
+
+                <input id="neededDate" name="neededDate" placeholder="NeededDate" type="text" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}" />
+            </div>
+
+        </div>
+
+
+
+        <div class="row" style="display: flex; padding: 10px 50px; ">
+
+            <input class="sub" type="submit" value="Add" style="margin-left: auto;">
+
+        </div>
+
+
+        <div class="row" style="display: flex; padding: 10px 50px; ">
+            <div class="col-12 col-md-12 mt-4" style="background-color: beige; padding: 10px 80px 10px 80px; width: 100%; margin: 6px;">
+                <table class="allDetails">
+                    <tr>
+                        <th>Title</th>
+                        <th>Details</th>
+                        <th>Date</th>
+
+                    </tr>
+
+                    <tr>
+
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
